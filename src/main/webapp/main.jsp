@@ -15,14 +15,14 @@
 	<h1>Guestbook Application</h1>
 	<h2>Guestbook Entries submitted</h2>
 	
-	<c:if test="${param._method.equals(\"delete\")}">
+	<c:if test="${param._method == (\"delete\")}">
 		<%
 		String strgbEntryID = request.getParameter("gbEntryID");
 		Integer gbEntryID = Integer.valueOf(strgbEntryID);
 		repo.getGbEntries().remove(gbEntryID-1);
 		%>
 	</c:if>
-	<c:if test="${param._method.equals(\"put\") }">
+	<c:if test="${param._method == (\"put\") }">
 		<%
 		String strgbEntryID = request.getParameter("gbEntryID");
 		Integer gbEntryID = Integer.valueOf(strgbEntryID);
