@@ -6,4 +6,16 @@
   <packaging>war</packaging>
   <name>GWallis Project</name>
   <description>BSc Cloud Computing 2011-12</description>
+<dependencies>
+<dependency>
+	<groupId>javax.servlet</groupId>
+	<artifactId>servlet-api</artifactId>
+	<version>2.5</version>
+</dependency>
+<dependency>
+	<groupId>javax.servlet</groupId>
+	<artifactId>jstl</artifactId>
+	<version>1.2</version>
+</dependency>
+</dependencies>
 </project>
